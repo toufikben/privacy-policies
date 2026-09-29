@@ -33,50 +33,54 @@
   <h1>Privacy Policy — Shieldra (Phone Security)</h1>
   <p class="meta">Application ID: <code>com.shieldra.app</code> &middot; Android</p>
   <p class="meta">Effective date: 29 September 2026</p>
-  <span class="badge">Zero permissions &middot; No account &middot; No cloud</span>
+  <span class="badge">No account &middot; No cloud &middot; Permissions only when a feature needs one</span>
 
   <p>Shieldra is a device-first security app for your own phone. This policy explains exactly what
   Shieldra does and — just as importantly — what it does not do.</p>
 
   <h2>1. The short version</h2>
-  <p>Shieldra requests <strong>no Android permissions at all</strong> and has no account system, no server
-  connection, and no third-party analytics. Everything the app records stays in encrypted storage on your
-  device.</p>
+  <p>Shieldra has no account system, no server of its own, and no third-party analytics. Records you
+  create stay in encrypted storage on your device. Shieldra asks for a permission only when a feature
+  you have chosen actually needs it, and explains why at that moment.</p>
 
   <h2>2. Shieldra is designed for your own device</h2>
-  <p>Shieldra protects the phone it is installed on. It is meant to be installed by the phone's own owner
-  to detect tampering, physical movement, and SIM changes. It is <strong>not</strong> a parental
-  monitoring tool, not a child-tracking app, and not a tool for monitoring another person's phone.</p>
-  <p>Shieldra cannot see your messages, calls, contacts, photos, browsing, camera, or location, because it
-  does not request permission to access any of them.</p>
+  <p>Shieldra protects the phone it is installed on. It is meant to be installed by the phone's own owner.
+  It is <strong>not</strong> a parental monitoring tool, not a child-tracking app, and not a tool for
+  monitoring another person's phone.</p>
+  <p>Shieldra does not read your messages, calls, contacts, photos, or browsing history, and has no
+  mechanism to send them anywhere.</p>
 
   <h2>3. What Shieldra records</h2>
-  <p>When a guard is triggered, Shieldra may record an <strong>event</strong> on your device. An event
+  <p>When you trigger a guard, Shieldra records an <strong>event</strong> on your device. An event
   contains only:</p>
   <ul>
-    <li>The type of event (for example, a failed unlock pattern, physical movement, or a SIM change)</li>
+    <li>The type of event (for example, a Panic entry you started yourself)</li>
     <li>The date and time it occurred</li>
     <li>A severity level</li>
-    <li>Any evidence attached to that event, if you have enabled evidence capture</li>
-    <li>Whether a notification was delivered, and to which channel</li>
+    <li>Whether an on-device notification was shown</li>
   </ul>
+  <p>An event contains no photograph, no audio, and no location. Shieldra has no camera, microphone or
+  location permission, so there is no path by which such data could be attached to an event.</p>
   <p>Event history is kept in a local database, protected by <strong>AES-GCM encryption</strong> using a
   key held in the Android Keystore. The key is bound to your device and is deleted if the device is reset.</p>
 
   <h2>4. How Shieldra decides to record something</h2>
   <p>Shieldra uses a two-stage design. A <em>signal</em> on its own never starts a recording. Only a
-  <em>confirmed</em> pattern of signals — for example, several failed unlock attempts within a short window —
- creates an event. This is deliberate: it means ordinary mistakes do not generate a trail of records.</p>
+<em>confirmed</em> condition creates an event. In the current release the confirmed condition is the
+Panic action you take yourself — so an event is recorded because you asked for it, not because a
+background process guessed. This is deliberate: it means ordinary mistakes do not generate a trail of
+records.</p>
 
   <h2>5. What leaves your device</h2>
   <table>
     <tr><th>Data</th><th>Purpose</th><th>Who receives it</th></tr>
-    <tr><td>Alert message</td><td>Delivering a security alert you asked for</td><td>The channel you chose (email, WhatsApp, or Telegram)</td></tr>
     <tr><td>Advertising identifier</td><td>Showing advertisements in the free version</td><td>Google</td></tr>
     <tr><td>Purchase confirmation</td><td>Verifying a one-time purchase completes</td><td>Google Play</td></tr>
   </table>
-  <p>Shieldra has no server of its own. An alert is delivered only to the destination you configured. The
-  app never sends your event history anywhere, and there is no account to link it to.</p>
+  <p>Those are the only two rows. Shieldra has no server of its own, and <strong>your event history never
+  leaves the device</strong> — not to us, not to a messaging service, and not to any backup or analytics
+  provider. Security alerts are shown to you on the device itself; there is no email, SMS, WhatsApp or
+  Telegram delivery path in the app, and no recipient for you to configure.</p>
 
   <h3>Advertising</h3>
   <p>The free version shows a banner advertisement provided by Google AdMob. The paid lifetime version
@@ -92,29 +96,39 @@
   <ul>
     <li>Your name, email address, phone number, or any account details — there is no sign-up</li>
     <li>Your contacts, call log, or SMS messages</li>
-    <li>Your photos or camera roll, unless you explicitly enable evidence capture for a confirmed event</li>
-    <li>Your precise or approximate location</li>
+    <li>Photos from your camera roll. Shieldra has no camera permission and captures no imagery in the
+        current release</li>
+    <li>Your precise or approximate location. Shieldra has no location permission and performs no
+        background location collection</li>
+    <li>Audio. No microphone recording is enabled in Shieldra, in any mode</li>
     <li>A list of your installed apps</li>
-    <li>Device identifiers such as IMEI or Android ID</li>
+    <li>Device identifiers such as IMEI or Android ID. The Google advertising identifier used to serve ads
+        is covered separately in section 5</li>
     <li>Usage analytics, crash reports, or profiling data</li>
     <li>Your passcode, passwords, or any authentication secret — the app is designed never to store these</li>
   </ul>
 
   <h2>7. Permissions</h2>
-  <p>Shieldra declares <strong>zero Android permissions</strong>. It does not request location, camera,
-  microphone, contacts, phone state, storage, accessibility, device administration, or the ability to list
-  installed applications.</p>
-  <p>Any future version that would require a permission will be described in this policy and justified in
-  the app's Play Store listing before release.</p>
+  <p>Shieldra does not request location, camera, microphone, contacts, phone state, storage,
+  accessibility, device administration, or the ability to list installed applications, and it has no
+  accessibility or device-admin component.</p>
+  <p>The one permission a releasing build asks for is <code>POST_NOTIFICATIONS</code>, so that a security
+  alert can reach you while the app is not in the foreground. It is requested at the point the notification
+  feature is used, not at first launch, and the app works without it — you simply have to open Shieldra to
+  see your history. Declining is a supported outcome, never a broken one.</p>
+  <p>Any further permission a later version would require will be described in this policy and justified in
+  the app's Play Store listing before that version is released. Shieldra does not ask for permissions for
+  features it does not have yet.</p>
 
   <h2>8. Backup and transfer</h2>
   <p>Shieldra is excluded from your device's automatic cloud backup and from device-to-device transfer. Its
   encrypted event database does not leave the phone through those channels.</p>
 
   <h2>9. Data retention and deletion</h2>
-  <p>Event history is stored on your device only. You can delete it from within the app at any time. If you
-  uninstall Shieldra, its local data is removed with it. There is no copy held anywhere else, because
-  none is ever created.</p>
+  <p>Event history is stored on your device only, and you can read all of it inside the app. There is no
+  copy held anywhere else, because none is ever created. If you uninstall Shieldra, its local data is
+  removed with it — and because the encryption key lives in the Android Keystore, a confirmed factory
+  reset makes any stored evidence permanently unreadable rather than merely hidden.</p>
 
   <h2>10. Children</h2>
   <p>Shieldra is intended for adults protecting their own phone and is not directed at children under 13.
@@ -122,9 +136,10 @@
   children.</p>
 
   <h2>11. Your rights</h2>
-  <p>Under the GDPR, CCPA and similar laws you have the right to access, correct, export, or delete your
-  data. All of Shieldra's data is stored only on your device and never transmitted to us, so you can
-  exercise these rights yourself without contacting us.</p>
+  <p>Under the GDPR, CCPA and similar laws you have the right to access, correct, or delete your data. All
+  of Shieldra's data is stored only on your device and never transmitted to us, so you exercise these
+  rights directly in the app rather than by contacting us. We cannot retrieve, read, or restore your data
+  on your behalf, because we hold no copy of it.</p>
 
   <h2>12. Changes to this policy</h2>
   <p>If this policy changes, the updated version will be published at this URL with a new effective date
