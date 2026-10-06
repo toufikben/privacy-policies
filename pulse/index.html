@@ -31,8 +31,8 @@
 
   <h1>Privacy Policy — Pulse (Private Journal)</h1>
   <p class="meta">Application ID: <code>com.nabd.journal</code> &middot; Android</p>
-  <p class="meta">Effective date: 29 September 2026</p>
-  <span class="badge">100% offline &middot; No account &middot; No tracking</span>
+  <p class="meta">Effective date: 6 October 2026</p>
+  <span class="badge">Works offline &middot; No account &middot; No ads &middot; No tracking</span>
 
   <p>Pulse is a private journal that stores everything on your own device. This policy explains exactly
   what happens to your information when you use the app.</p>
@@ -40,7 +40,7 @@
   <h2>1. The short version</h2>
   <p>Your journal entries, moods, tags, photos and audio recordings never leave your phone. There is no
   account to create, no email address to give, and no server that receives your writing. The app contains
-  no analytics software, no crash-reporting service, and no third-party tracking.</p>
+  no analytics software, no crash-reporting service, no advertising and no third-party tracking.</p>
 
   <h2>2. What stays on your device</h2>
   <p>Everything you create is written to your device's private storage:</p>
@@ -49,33 +49,45 @@
     <li>Mood records and your mood history</li>
     <li>Photos you attach to entries</li>
     <li>Audio recordings you make for an entry</li>
-    <li>Your seed garden, achievements, streaks and challenges</li>
+    <li>Your seed garden, achievements, streaks, challenges and small habits</li>
+    <li>Letters to your future self</li>
     <li>Tags, search preferences and app settings</li>
   </ul>
-  <p>All of this is stored in an <strong>encrypted database</strong>. Pulse uses
-  <strong>AES-256-GCM</strong> encryption for data at rest; the encryption key is generated on your device
-  and held in the operating system's secure keystore. Without your device passcode or biometric, the
-  journal content cannot be read.</p>
+  <p>All of this is stored <strong>encrypted</strong>: the journal database with <strong>AES-256</strong>,
+  and photos and audio with <strong>AES-256-GCM</strong>. The encryption key is generated on your device
+  and held in the Android Keystore. Android's automatic cloud backup is turned off for Pulse's data.</p>
 
   <h2>3. What leaves your device, and why</h2>
   <table>
-    <tr><th>Data</th><th>Purpose</th><th>Who receives it</th></tr>
-    <tr><td>Advertising identifier</td><td>Showing advertisements from Google AdMob</td><td>Google</td></tr>
-    <tr><td>Purchase confirmation</td><td>Verifying an in-app purchase completes</td><td>Google Play</td></tr>
+    <tr><th>Data</th><th>When</th><th>Who receives it</th></tr>
+    <tr><td>Purchase confirmation</td><td>When you buy Pulse Pro</td><td>Google Play</td></tr>
+    <tr><td>Google Play purchase token and a random app user ID</td><td>Only if you take a monthly or yearly
+      subscription, to check that it is active and until when</td><td>RevenueCat (our subscription
+      verification service)</td></tr>
+    <tr><td>Audio of your dictation</td><td>Only if you dictate, and only after you allow online
+      recognition because your language's offline voice pack is missing</td><td>Your phone's speech
+      recognition service (for example Google)</td></tr>
   </table>
-  <p>These are the only two cases in which any identifier is transmitted. No journal content, mood data,
-  photo, audio file, or personal detail is ever included in a request.</p>
-
-  <h3>Advertising</h3>
-  <p>The free version of Pulse displays advertisements provided by Google AdMob. Google may use the
-  device's advertising identifier to serve and measure ads. Pulse shows a <em>rewarded</em> advertisement
-  only when you choose to watch one in exchange for a reward. Removing ads is part of the paid tier.
-  For details on Google's use of the advertising identifier, see
-  <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">Google Ads policies</a>.</p>
+  <p>No journal content, mood data, photo, audio recording, name or e-mail address is ever included in
+  these requests. Pulse contains <strong>no advertising</strong>, and no advertising identifier is used.</p>
 
   <h3>In-app purchases</h3>
-  <p>Purchases are processed entirely by Google Play. Pulse receives only a confirmation that a purchase
-  succeeded. Payment card details are never seen by this app and never stored on your device.</p>
+  <p>Purchases are processed entirely by Google Play. Payment card details are never seen by this app and
+  never stored on your device. A lifetime purchase is confirmed by Google Play alone.</p>
+
+  <h3>Subscription checks (RevenueCat)</h3>
+  <p>A subscription can renew, lapse or be refunded, so Pulse asks
+  <a href="https://www.revenuecat.com/privacy" rel="noopener noreferrer" target="_blank">RevenueCat</a>
+  whether it is still active. Pulse sends the purchase token issued by Google Play, the product
+  identifier and a random ID created on your phone, which identifies no person. RevenueCat checks the
+  token with Google and returns the subscription's status and expiry date. This happens only for monthly
+  or yearly subscriptions.</p>
+
+  <h3>Dictation</h3>
+  <p>Dictation uses your phone's on-device speech recognition by default, so your voice stays on the
+  phone. If the offline voice pack for your language is missing, Pulse asks before using the phone's
+  online speech service, which may send audio to its provider. You can withdraw that consent in Settings.
+  Pulse itself keeps no audio from dictation.</p>
 
   <h2>4. What we do NOT collect</h2>
   <p class="no">We do not collect:</p>
@@ -85,14 +97,14 @@
     <li>Your location or GPS coordinates</li>
     <li>Your contacts, call log, or SMS messages</li>
     <li>Your browsing history or installed apps</li>
-    <li>Usage analytics or profiling data</li>
+    <li>Usage analytics, advertising identifiers or profiling data</li>
     <li>Your journal text, mood records, photos, or audio</li>
   </ul>
 
   <h2>5. On-device text analysis</h2>
-  <p>Pulse offers features that analyse your writing — for example, suggesting a mood, proposing tags,
-  or summarising an entry. This analysis runs <strong>entirely on your device</strong> using built-in rules
-  and dictionaries. It is not artificial intelligence hosted in the cloud, and your text is not transmitted
+  <p>Pulse offers features that look at your writing and moods — for example mood patterns, monthly
+  summaries, habit insights and the smart reminder time. This runs <strong>entirely on your device</strong>
+  using built-in rules. It is not artificial intelligence hosted in the cloud, and your text is not transmitted
   to any external service to be analysed.</p>
 
   <h2>6. Permissions the app requests</h2>
@@ -101,9 +113,11 @@
     <tr><td>Camera</td><td>Not required — photos are chosen from your existing library</td></tr>
     <tr><td>Photos and media</td><td>Attaching an existing photo to a journal entry</td></tr>
     <tr><td>Microphone</td><td>Recording audio to attach to an entry, and voice dictation</td></tr>
-    <tr><td>Notifications</td><td>Your optional daily writing reminder</td></tr>
+    <tr><td>Notifications</td><td>Your optional daily reminder, weekly review and future-letter unlocks, all
+      scheduled on the phone</td></tr>
+    <tr><td>Run at startup</td><td>Re-scheduling your reminders after the phone restarts</td></tr>
     <tr><td>Biometrics</td><td>Unlocking the app with your fingerprint or face</td></tr>
-    <tr><td>Internet</td><td>Loading advertisements and contacting Google Play for purchases</td></tr>
+    <tr><td>Internet</td><td>Google Play purchases and subscription checks (see section 3)</td></tr>
   </table>
   <p>Every permission is optional. If you decline one, the corresponding feature is unavailable and the
   rest of the app continues to work.</p>
@@ -123,8 +137,9 @@
 
   <h2>9. Your rights</h2>
   <p>Under the GDPR, CCPA and similar laws you have the right to access, correct, export, or delete your
-  personal data. Because all data is stored only on your device and is never transmitted to us, you can
-  exercise every one of these rights directly from within the app without contacting us.</p>
+  personal data. Because your journal is stored only on your device and is never transmitted to us, you can
+  exercise every one of these rights directly from within the app without contacting us. Subscription
+  records held by RevenueCat are tied only to the random ID described in section 3.</p>
 
   <h2>10. Changes to this policy</h2>
   <p>If this policy changes, the updated version will be published at this URL with a new effective date
