@@ -35,7 +35,7 @@
     <div class="meta">
       <strong>التطبيق:</strong> Algeriano for 3raya &nbsp;·&nbsp; <strong>معرّف التطبيق:</strong> com.toufikbendjeddah.algerianofor3raya<br>
       <strong>المطور:</strong> Toufik Bendjeddah &nbsp;·&nbsp; <strong>التواصل:</strong> <a href="mailto:www.toufik.bendjeddah@gmail.com">www.toufik.bendjeddah@gmail.com</a><br>
-      <strong>تاريخ السريان:</strong> 22 أغسطس 2026 &nbsp;·&nbsp; <strong>آخر تحديث:</strong> 10 أكتوبر 2026 (الإصدار 1.1)
+      <strong>تاريخ السريان:</strong> 22 أغسطس 2026 &nbsp;·&nbsp; <strong>آخر تحديث:</strong> 14 أكتوبر 2026 (الإصدار 1.2)
     </div>
 
     <h2>1. نطاق السياسة</h2>
@@ -45,7 +45,7 @@
     <table>
       <thead><tr><th>البيانات</th><th>الغرض</th><th>أين تذهب</th></tr></thead>
       <tbody>
-        <tr><td>صورة من الكاميرا الأمامية</td><td>إنشاء تنبيه أمني بعد محاولة فتح خاطئة، عند تفعيل الحماية</td><td>تُحفظ داخل مساحة التطبيق الخاصة على الجهاز، وتُرفق برسالة البريد التي يحدّدها المالك</td></tr>
+        <tr><td>صورة من الكاميرا الأمامية</td><td>إنشاء تنبيه أمني بعد محاولة فتح خاطئة، عند تفعيل الحماية</td><td>تُحفظ في مجلّد التطبيق الخاص بالتخزين الخارجي (غير مشفّر، ولا تصل إليه تطبيقات أخرى دون أذن تخزين)، وتُرفق برسالة البريد التي يحدّدها المالك</td></tr>
         <tr><td>موقع الجهاز (تقريبي/دقيق)</td><td>معرفة مكان الهاتف عند وقوع محاولة مشبوهة</td><td>يُستخدم محليًا لتوليد رابط خريطة ويُدرج في رسالة التنبيه فقط</td></tr>
         <tr><td>عنوان Gmail وكلمة مرور التطبيقات (App Password)</td><td>المصادقة مع حساب Gmail الذي يختاره المستخدم وإرسال التنبيهات</td><td>تبقى على الجهاز وتُستعمل للإرسال مباشرةً من بريد Gmail؛ لا تصل إلى أي خادم تابع للمطوّر</td></tr>
         <tr><td>سجل المحاولات وإعدادات الحماية</td><td>عرض سجل أمني محلي والحفاظ على حالة الحماية</td><td>تخزين محلي على الجهاز</td></tr>
@@ -61,6 +61,7 @@
       <li><strong>مدير الجهاز (Device Admin):</strong> مراقبة محاولات رمز الفتح الخاطئ فقط. <strong>لا يحتوي التطبيق على قفل أو مسح للبيانات عن بُعد</strong>، ويمكن إلغاء هذه الصلاحية من إعدادات Android في أي وقت.</li>
       <li><strong>البدء مع النظام + منع السكون + تجاهل تحسين البطارية:</strong> بقاء الحماية فعّالة بعد إعادة التشغيل.</li>
       <li><strong>الإنترنت:</strong> إرسال رسالة التنبيه عبر بريد Gmail وربط الموقع بالخريطة.</li>
+      <li><strong>حالة الشبكة:</strong> إذن معلن في ملف الأذونات لكنه لا يُستخدم لجمع أي معلومة عنك؛ سيُزال من الإصدار القادم.</li>
     </ul>
     <p>لا يطلب التطبيق صلاحيات الرسائل (SMS/SMS read)، ولا جهات الاتصال، ولا الوصول إلى ملفاتك أو صورك، ولا قائمة التطبيقات المثبّتة.</p>
 
@@ -78,7 +79,7 @@
     </ul>
 
     <h2>6. الاحتفاظ والحذف</h2>
-    <p>تبقى الصور والسجلات على جهازك حتى تحذفها من التطبيق، أو تمسح بياناته (الإعدادات ← التطبيقات ← مسح التخزين)، أو تحذف التطبيق. رسائل التنبيه تبقى في صندوق بريدك أنت، وأنت من يحذفها. لا يحتفظ المطور بنسخة من أي منها. لطلب حذف ما قد يكون وصل إلى المطوّر (وهو بحكم التصميم لا شيء) راسلنا على البريد أعلاه.</p>
+    <p>تبقى الصور والسجلات على جهازك حتى تحذفها من التطبيق (يمسح السجل آخر <strong>50</strong> محاولة وصورها، ولا توجد مهلة حذف تلقائي أطول من ذلك)، أو تمسح بياناته (الإعدادات ← التطبيقات ← مسح التخزين)، أو تحذف التطبيق. رسائل التنبيه تبقى في صندوق بريدك أنت، وأنت من يحذفها. لا يحتفظ المطور بنسخة من أي منها. لطلب حذف ما قد يكون وصل إلى المطوّر (وهو بحكم التصميم لا شيء) راسلنا على البريد أعلاه.</p>
 
     <h2>7. الأطفال</h2>
     <p>التطبيق موجه للبالغين (18+) وليس مخصصًا للأطفال، ولا نستهدفه بهم. لا تستخدمه لمراقبة طفل أو جهاز شخص آخر دون الموافقات والإشراف القانوني المطلوبين.</p>
@@ -92,7 +93,7 @@
     <div class="meta">
       <strong>App:</strong> Algeriano for 3raya &nbsp;·&nbsp; <strong>Package:</strong> com.toufikbendjeddah.algerianofor3raya<br>
       <strong>Developer:</strong> Toufik Bendjeddah &nbsp;·&nbsp; <strong>Contact:</strong> <a href="mailto:www.toufik.bendjeddah@gmail.com">www.toufik.bendjeddah@gmail.com</a><br>
-      <strong>Effective:</strong> 22 August 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 10 October 2026 (v1.1)
+      <strong>Effective:</strong> 22 August 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 14 October 2026 (v1.2)
     </div>
 
     <h2>1. Scope</h2>
@@ -102,7 +103,7 @@
     <table>
       <thead><tr><th>Data</th><th>Purpose</th><th>Where it goes</th></tr></thead>
       <tbody>
-        <tr><td>Front-camera photo</td><td>Create a security alert after a failed unlock attempt, once protection is enabled</td><td>Saved inside the app's private storage on your device, and attached to the email you configured</td></tr>
+        <tr><td>Front-camera photo</td><td>Create a security alert after a failed unlock attempt, once protection is enabled</td><td>Saved in the app-specific external files directory (unencrypted, reachable only with storage permission), and attached to the email you configured</td></tr>
         <tr><td>Device location (coarse/precise)</td><td>Tell the owner where the phone is when a suspicious attempt happens</td><td>Used locally to build a map link and included in the alert email only</td></tr>
         <tr><td>Gmail address and App Password</td><td>Authenticate with the Gmail account the user chooses and send alerts</td><td>Kept on the device and used to send mail directly from Gmail; never sent to any server of ours</td></tr>
         <tr><td>Attempt log and protection settings</td><td>Show a local security log and keep protection state</td><td>Local storage on the device</td></tr>
@@ -118,6 +119,7 @@
       <li><strong>Device Admin:</strong> to observe wrong-PIN attempts only. <strong>The app contains no remote lock and no remote wipe.</strong> You can revoke this in Android settings at any time.</li>
       <li><strong>Start at boot, wake lock, ignore battery optimisation:</strong> keep protection alive after a restart.</li>
       <li><strong>Internet:</strong> send the alert through your Gmail and open the map link.</li>
+      <li><strong>Network state:</strong> declared in the app manifest but not used to collect anything about you; it will be removed in a future version.</li>
     </ul>
     <p>The app does not request SMS permissions, contacts, your files or photos, or the list of installed apps.</p>
 
@@ -135,7 +137,7 @@
     </ul>
 
     <h2>6. Retention and deletion</h2>
-    <p>Photos and logs stay on your device until you delete them in the app, clear its storage (Settings → Apps → Clear storage), or uninstall it. Alert emails stay in your own mailbox, which you control. We keep no copy of any of it. To request deletion of anything that could have reached us — which by design is nothing — email the address above.</p>
+    <p>Photos and logs stay on your device until you delete them in the app (the log keeps the last <strong>50</strong> attempts with their photos, and there is no automatic expiry beyond that), clear its storage (Settings → Apps → Clear storage), or uninstall it. Alert emails stay in your own mailbox, which you control. We keep no copy of any of it. To request deletion of anything that could have reached us — which by design is nothing — email the address above.</p>
 
     <h2>7. Children</h2>
     <p>The app is intended for adults (18+) and is not directed at children. Do not use it to watch a child or another person's device without the required consent and supervision.</p>

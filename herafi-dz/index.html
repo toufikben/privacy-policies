@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — Herafi DZ · Privacy Policy</title>
+<style>
+  :root { color-scheme: light; --ink:#211f1a; --accent:#8a5a1f; --paper:#fbfaf6; --line:#e6e1d5; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f3f0e8; color:var(--ink); font-family:Arial, Tahoma, sans-serif; line-height:1.75; }
+  main { width:min(860px, calc(100% - 32px)); margin:32px auto; background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,5vw,52px); box-shadow:0 12px 34px rgba(60,45,20,.08); }
+  h1,h2 { color:var(--accent); line-height:1.25; }
+  h1 { margin-top:0; font-size:clamp(1.7rem,5vw,2.4rem); }
+  h2 { margin-top:2rem; font-size:1.28rem; }
+  .meta { padding:14px 18px; background:#f4ecdd; border-radius:14px; }
+  .warn { padding:14px 18px; background:#fdf1e6; border:1px solid #e9c9a8; border-radius:14px; }
+  section.en { direction:ltr; text-align:left; border-top:1px solid var(--line); margin-top:44px; padding-top:8px; }
+  ul { padding-inline-start:1.3rem; }
+  li { margin-bottom:.45rem; }
+  code { background:#efeade; padding:2px 6px; border-radius:6px; font-size:.92em; }
+  a { color:#7a4d16; font-weight:700; }
+  footer { margin-top:40px; font-size:.92rem; color:#6c6552; }
+</style>
+</head>
+<body>
+<main>
+  <h1>سياسة الخصوصية — Herafi DZ</h1>
+  <p class="meta">آخر تحديث: 2026-10-14 · التطبيق: <strong>Herafi DZ (حرفي الجزائر)</strong> · المعرّف: <code>com.aistudio.algeriacraftsmen.dzmprq</code> · الإصدار: 1.7.0</p>
+
+  <h2>١. ما هذا التطبيق</h2>
+  <p>«Herafi DZ» يربط الزبائن بالحرفيين في الجزائر حسب الولاية والبلدية: يطلب الزبون عملًا (سبّاج، كهربائي، نجّار…) ويُعرَض طلبه على الحرفيين ليتواصلوا معه. التطبيق يحتاج حسابًا وخادمًا بعيدًا، لذلك — على خلاف تطبيقاتنا الأخرى — بعض بياناتك تُخزَّن على خادمنا.</p>
+
+  <h2>٢. البيانات التي نجمعها</h2>
+  <ul>
+    <li><strong>عند إنشاء الحساب:</strong> الاسم الكامل، البريد الإلكتروني، كلمة المرور، رقم الهاتف، رقم الولاية. تُحفظ نسخة محلية على جهازك (قاعدة Room + تفضيلات مشفّرة) ونسخة في خادمنا.</li>
+    <li><strong>عند إنشاء طلب عمل:</strong> رقم هاتفك واسمك، اسم الحرفي وهاتفه إن اخترته، الولاية والبلدية، وصف العمل، والصور التي ترفعها بنفسك.</li>
+    <li><strong>ملف الحرفي:</strong> اسمه ورقم هاتفه وولايته — يظهر للزبائن الذين يبحثون في ولايته.</li>
+  </ul>
+  <p>لا نجمع موقعك الجغرافي (لا إذن موقع في التطبيق)، ولاجهات اتصالاتك، ولا صورك خارج ما ترفعه أنت، ولا تُعرض إعلانات، ولا أدوات تحليل أو تتبّع أو تقارير أعطال.</p>
+
+  <h2>٣. من يرى بياناتك</h2>
+  <ul>
+    <li><strong>الحرفيون:</strong> اسمك ورقم هاتفك ووصف العمل ومكانه ومرفقاته — لأن جوهر الخدمة هو أن يتصل الحرفي بك.</li>
+    <li><strong>الزبائن:</strong> اسم الحرفي ورقم هاتفه وولايته، كما نشرها بنفسه.</li>
+    <li><strong>مزوّد الخدمة:</strong> تُخزَّن هذه البيانات في قاعدة Supabase (قاعدة بيانات وتخزين ملفات). قد تظهر طلباتك وصورها في روابط مباشرة لأن دلوّ صور الطلبات <code>request-photos</code> مضبوط على القراءة العامة؛ لا ترفع صورًا تحتوي بيانات شخصية حساسة.</li>
+    <li><strong>WhatsApp:</strong> أزرار «تواصل عبر WhatsApp» تفتح تطبيق WhatsApp عند رقم، وهي بينك وبين الطرف الآخر؛ لا يمرّ شيء عبرنا عند فتحها.</li>
+  </ul>
+
+  <h2>٤. الأذونات ولماذا</h2>
+  <ul>
+    <li><strong>الإنترنت</strong> (<code>INTERNET</code> + <code>ACCESS_NETWORK_STATE</code>): لإنشاء الحساب ولمّ الطلبات وإرسالها وحفظها في الخادم. التطبيق يستعلم عن الطلبات الجديدة كل 30 ثانية بدل خدمة دفع خارجية.</li>
+    <li><strong>الإشعارات</strong> (<code>POST_NOTIFICATIONS</code>): لإعلامك بوصول حرفي أو ردّ على طلبك.</li>
+    <li>لا يطلب التطبيق الميكروفون ولا الكاميرا مباشرةً؛ الصور تُختار عبر منتقي الصور في النظام، فترى التطبيق منها ما تختاره أنت فقط.</li>
+  </ul>
+
+  <h2>٥. حذف حسابك وبياناتك</h2>
+  <p class="warn">هذا مهم: لا يوجد حاليًا في التطبيق زر «حذف الحساب» يصل إلى الخادم. لحذف حسابك وبياناتك من خادمنا، أرسل طلبًا إلى البريد أدناه من البريد المسجَّل في حسابك، وسنحذف ملفك وطلباتك وصورها خلال 30 يومًا. حذف التطبيق من الهاتف يمسح النسخة المحلية فقط.</p>
+
+  <h2>٦. الأمان</h2>
+  <p>كلمة المرور لا تُخزَّن كنص صريح: تُخزَّن محليًا كبصمة مع ملح (salt)، والاتصال بالخادم يتم عبر HTTPS. نسخ الاحتياط التلقائي في أندرويد مفعّل افتراضيًا لهذا التطبيق (<code>allowBackup=true</code>) وفق قواعد احتياط مقيدة؛ إن أردت منع أي نسخة احتياطية أعِد إعدادات النظام › النسخ الاحتياطي.</p>
+
+  <h2>٧. الأطفال</h2>
+  <p>التطبيق موجّه للبالغين الباحثين عن حرفي أو العاملين فيه، وليس مصمَّمًا لجمع بيانات من الأطفال دون 13 عامًا.</p>
+
+  <h2>٨. تغييرات هذه السياسة</h2>
+  <p>أي تغيير جوهري يُعلن هنا ويُحدَّث تاريخ أعلى الصفحة قبل نشر إصدار يعتمد عليه.</p>
+
+  <h2>٩. التواصل</h2>
+  <p>للأسئلة أو حذف الحساب: <code>www.toufik.bendjeddah@gmail.com</code>.</p>
+
+  <section class="en" lang="en">
+    <h2>Privacy Policy — Herafi DZ (English)</h2>
+    <p><strong>Last updated:</strong> 2026-10-14 · <strong>App:</strong> Herafi DZ · <strong>Package:</strong> <code>com.aistudio.algeriacraftsmen.dzmprq</code> · version 1.7.0</p>
+
+    <h2>1. What the app is</h2>
+    <p>Herafi DZ connects customers with tradesmen (plumbers, electricians, carpenters…) across Algerian wilayas. A customer posts a job and tradesmen see it and get in touch. Unlike our offline apps, this one has accounts and a backend server, so some of your data is stored on our server.</p>
+
+    <h2>2. Data we collect</h2>
+    <ul>
+      <li><strong>Sign-up:</strong> full name, email address, password, phone number, wilaya code. Kept both on your device (Room database plus encrypted preferences) and on our server.</li>
+      <li><strong>Service requests:</strong> your name and phone, the trade and wilaya/commune, a description, and any photos you upload.</li>
+      <li><strong>Tradesmen profiles:</strong> name, phone number and wilaya, published by the tradesman himself and shown to customers searching his area.</li>
+    </ul>
+    <p>We do not collect your geographic location (the app declares no location permission), your contacts, or photos other than the ones you upload. There are no ads, no analytics, no tracking SDKs and no crash-reporting service.</p>
+
+    <h2>3. Who sees your data</h2>
+    <ul>
+      <li><strong>Tradesmen</strong> see your name, phone number, the job description, location fields and attachments — the whole service is that they can call you.</li>
+      <li><strong>Customers</strong> see each tradesman's name, phone and wilaya, as he published them.</li>
+      <li><strong>Our hosting provider:</strong> records and files live in a Supabase project. The request-photo bucket <code>request-photos</code> is configured for public read, so a request photo can be reachable through its direct link — do not attach images containing sensitive personal data.</li>
+      <li><strong>WhatsApp</strong> buttons open WhatsApp with the other party's number; that conversation is between you and them and passes nothing to us.</li>
+    </ul>
+
+    <h2>4. Permissions and why</h2>
+    <ul>
+      <li><code>INTERNET</code> + <code>ACCESS_NETWORK_STATE</code> — creating your account, fetching and posting requests, saving them to the server. New-request checks run by polling every 30 seconds instead of a push service.</li>
+      <li><code>POST_NOTIFICATIONS</code> — telling you a tradesman responded to your request.</li>
+      <li>No microphone or camera permission; pictures are chosen with the system picker, so the app only sees what you select.</li>
+    </ul>
+
+    <h2>5. Deleting your account</h2>
+    <p class="warn">Important: the app does not yet contain a server-side "delete my account" button. To have your account and data erased from our server, send a request to the address below from the email registered on your account, and we will delete your profile, requests and photos within 30 days. Uninstalling the app removes only the on-device copy.</p>
+
+    <h2>6. Security</h2>
+    <p>Your password is never stored as plain text — locally it is kept as a salted hash, and all traffic to the server goes over HTTPS. Android's automatic backup is enabled for this app (<code>allowBackup=true</code>) under restricted backup rules; turn it off in system Settings if you do not want any backup.</p>
+
+    <h2>7. Children</h2>
+    <p>The app is aimed at adults looking for a tradesman or working as one, and is not designed to collect data from children under 13.</p>
+
+    <h2>8. Changes</h2>
+    <p>Any material change is announced on this page with an updated date before the release that depends on it ships.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions or deletion requests: <code>www.toufik.bendjeddah@gmail.com</code>.</p>
+  </section>
+
+  <footer>This page describes the Android app <code>com.aistudio.algeriacraftsmen.dzmprq</code>. Claims are taken from the app's own manifest, source and backend schema.</footer>
+</main>
+</body>
+</html>

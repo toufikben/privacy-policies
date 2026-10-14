@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — حرفي الجزائر (Herafi) · Privacy Policy</title>
+<style>
+  :root { color-scheme: light; --ink:#211f1a; --accent:#1f6b57; --paper:#fafcf9; --line:#dbe6dd; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#eef4ef; color:var(--ink); font-family:Arial, Tahoma, sans-serif; line-height:1.75; }
+  main { width:min(860px, calc(100% - 32px)); margin:32px auto; background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,5vw,52px); box-shadow:0 12px 34px rgba(20,60,45,.08); }
+  h1,h2 { color:var(--accent); line-height:1.25; }
+  h1 { margin-top:0; font-size:clamp(1.7rem,5vw,2.4rem); }
+  h2 { margin-top:2rem; font-size:1.28rem; }
+  .meta { padding:14px 18px; background:#e7f2ea; border-radius:14px; }
+  section.en { direction:ltr; text-align:left; border-top:1px solid var(--line); margin-top:44px; padding-top:8px; }
+  ul { padding-inline-start:1.3rem; }
+  li { margin-bottom:.45rem; }
+  code { background:#e6eee8; padding:2px 6px; border-radius:6px; font-size:.92em; }
+  a { color:#175645; font-weight:700; }
+  footer { margin-top:40px; font-size:.92rem; color:#5d6b62; }
+</style>
+</head>
+<body>
+<main>
+  <h1>سياسة الخصوصية — حرفي الجزائر (Herafi)</h1>
+  <p class="meta">آخر تحديث: 2026-10-14 · التطبيق: <strong>حرفي الجزائر — منصة ربط الزبائن بالحرفيين</strong> · المعرّف: <code>com.herafi.algeria</code> · الإصدار: 1.0.0</p>
+
+  <h2>١. ما هذا التطبيق</h2>
+  <p>يصل بين الزبون والحرفي في الجزائر: يسجّل الزبون برقم هاتفه، ينشر طلبًا، ويتواصل معه الحرفيون المسجَّلون في ولايته. التطبيق يعتمد على خدمة Firebase من Google، فبيانات الحساب والطلبات محفوظة في سحابة Firebase وليست على جهازك وحدك.</p>
+
+  <h2>٢. ما نجمعيه منك</h2>
+  <ul>
+    <li><strong>الهوية:</strong> رقم الهاتف (وهو مفتاح الدخول عبر رمز تحقق SMS من الرقم الدولي +213)، الاسم الكامل، وحين تُكمل ملفك: الولاية، البلدية، العنوان، التخصصات، نبذة قصيرة، وصورة حساب اختيارية.</li>
+    <li><strong>الطلبات:</strong> الوصف، العنوان والولاية والبلدية، الوقت المفضّل، ونظام التقييم بعد إنجاز العمل.</li>
+    <li><strong>معرّف الجهاز للإشعارات:</strong> رمز FCM الذي يعطيه Google لهاتفك، ليصلك ردّ الحرفي وأنت خارج التطبيق.</li>
+  </ul>
+  <p>لا بطاقة بنكية ولا عنوان بريد إلزامي، ولا إعلانات ولا أدوات تحليل ولا تتبّع ولا شاشة أطفال. ملاحظة صريحة: ميزة «صور الأعمال» معطَّلة حاليًا في هذا الإصدار، فلا تُرفع صور أعمال إلى التخزين السحابي إلى أن تُفعَّل.</p>
+
+  <h2>٣. الأذونات ولماذا</h2>
+  <ul>
+    <li><strong>الإنترنت</strong> (<code>INTERNET</code>): كل عملية تسجيل أو بحث أو طلب أو إشعار تمرّ عبر Firebase.</li>
+    <li><strong>الإشعارات</strong> (<code>POST_NOTIFICATIONS</code> في الإصدارات المستهدفة لأندرويد 13+): لوصول ردود الحرفيين.</li>
+    <li><strong>الصور (اختياري):</strong> منتقي صور النظام عند اختيار صورة حساب؛ لا يطلع التطبيق على بقية معرض صورك، ولا إذن كاميرا مباشر.</li>
+    <li>لا إذن موقع جغرافي في التطبيق: الولاية والبلدية والعنوان تختارها أنت كتابةً.</li>
+  </ul>
+
+  <h2>٤. من يصل إلى بياناتك</h2>
+  <ul>
+    <li><strong>الحرفيون والزبائن:</strong> ملفك العام (اسمك، ولايتك وبلديتك، تخصصاتك، نبذتك، وتقييماتك) معروض للأطراف الأخرى في المنصة — هذا هو هدف التطبيق.</li>
+    <li><strong>رقم هاتفك:</strong> يُعطى للطرف الذي تتفق معه ليتمّ الاتصال. لا تدرج رقمًا لا ترغب في مشاركته.</li>
+    <li><strong>Google Firebase:</strong> مستضيف الحسابات والطلبات ورموز الإشعارات، وفق سياسة خصوصية Google. مشروع الاستضافة باسم <code>herafi-algeria</code>.</li>
+    <li><strong>خدمة تمرير الإشعارات:</strong> قد يمرّ رمز FCM ونصّ الإشعار عبر خادم صغير يشغّله المطوّر على Render (<code>herafi-fcm-relay</code>) لتبليغك؛ لا يمرّ عبره محتوى محادثاتك ولا كلمات المرور.</li>
+  </ul>
+
+  <h2>٥. حذف حسابك</h2>
+  <p>في التطبيق: <strong>الإعدادات › حذف الحساب</strong>. يحذف هذا حساب Firebase وملفك في قاعدة البيانات، وبالتالي طلباتك ورمز إشعاراتك. لا يمكن التراجع. حذف التطبيق من الهاتف يمسح النسخ المحلية فقط ولا يحذف ما في السحابة، فاستعمل زر الحذف أولًا. وإن تعذّر الوصول للتطبيق، أرسل طلبًا إلى البريد أدناه من رقم/بريد حسابك.</p>
+
+  <h2>٦. الاحتفاظ والأمان</h2>
+  <p>نحتفظ ببياناتك ما دام حسابك مفتوحًا، ونحذفها عند حذف الحساب. التحقق يتم برمز SMS قصير لا يُخزَّن، والاتصال كله عبر HTTPS مع قواعد وصول في Firebase. إن اكتشفت وصولًا غير مقصود لبيانات سنُعلمك ونُصلحه.</p>
+
+  <h2>٧. الأطفال</h2>
+  <p>المنصة للبالغين الذين يطلبون أعمالًا يدوية أو يقدّمونها، ولا تُجمع بيانات من الأطفال دون 13 عامًا بشكل مقصود.</p>
+
+  <h2>٨. التواصل</h2>
+  <p>أسئلة أو طلبات حذف: <code>www.toufik.bendjeddah@gmail.com</code>.</p>
+
+  <section class="en" lang="en">
+    <h2>Privacy Policy — Herafi (حرفي الجزائر), English</h2>
+    <p><strong>Last updated:</strong> 2026-10-14 · <strong>Package:</strong> <code>com.herafi.algeria</code> · version 1.0.0 · a customer-to-tradesman marketplace for Algeria</p>
+
+    <h2>1. What this app is</h2>
+    <p>Herafi lets a customer post a job and lets tradesmen in his wilaya respond. Sign-in is by phone number. The app is built on Google Firebase, so your account and requests live in Firebase rather than only on your phone.</p>
+
+    <h2>2. What we collect</h2>
+    <ul>
+      <li><strong>Identity:</strong> your phone number (used for an SMS one-time code, international format +213) and your full name; optionally wilaya, commune, address, specialties, a short bio and an account photo.</li>
+      <li><strong>Requests:</strong> description, address/wilaya/commune, preferred time, and the rating you leave after the work.</li>
+      <li><strong>Push token:</strong> the FCM device token Google gives your phone, so a tradesman's reply reaches you when the app is closed.</li>
+    </ul>
+    <p>No payment card, no mandatory email, no ads, no analytics, no tracking SDKs. Stated plainly: the "work photos" upload feature is <strong>disabled in this version</strong>, so no work photos are sent to cloud storage until it is enabled.</p>
+
+    <h2>3. Permissions and why</h2>
+    <ul>
+      <li><code>INTERNET</code> — sign-in, search, posting and notifications all go through Firebase.</li>
+      <li><code>POST_NOTIFICATIONS</code> (Android 13+ targets) — delivering tradesmen replies.</li>
+      <li><strong>Photos, optional:</strong> the system image picker, used only when you choose an account picture. The app has no direct camera permission and does not browse your gallery.</li>
+      <li>No location permission: the wilaya, commune and address are text you type yourself.</li>
+    </ul>
+
+    <h2>4. Who can see your data</h2>
+    <ul>
+      <li><strong>Other users of the platform:</strong> your public profile — name, wilaya and commune, specialties, bio and ratings — is shown to the people you hire or who seek work, because that is the service.</li>
+      <li><strong>Your phone number</strong> is given to the party you arrange work with so they can call you. Do not add a number you are not willing to share.</li>
+      <li><strong>Google Firebase</strong> hosts accounts, requests and push tokens under Google's privacy policy (project <code>herafi-algeria</code>).</li>
+      <li><strong>Notification relay:</strong> your FCM token and the notification text may pass through a small server the developer runs on Render (<code>herafi-fcm-relay</code>) so alerts can be delivered. Chats and passwords never pass through it.</li>
+    </ul>
+
+    <h2>5. Deleting your account</h2>
+    <p>In the app: <strong>Settings › Delete account</strong> (حذف الحساب). It deletes your Firebase account and your database profile, and with them your requests and push token. This cannot be undone. Uninstalling only clears the device copy — use the button first. If you cannot reach the app, send the request to the address below from your registered number or email.</p>
+
+    <h2>6. Retention and security</h2>
+    <p>Data is kept while the account exists and deleted when you close it. Sign-in codes are short-lived and not stored, traffic is HTTPS, and access rules are configured in Firebase. If we become aware of unintended access to your data we will notify you and fix it.</p>
+
+    <h2>7. Children</h2>
+    <p>The platform is for adults hiring or doing manual work; we do not knowingly collect data from children under 13.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions or deletion requests: <code>www.toufik.bendjeddah@gmail.com</code>.</p>
+  </section>
+
+  <footer>Describes the Android app <code>com.herafi.algeria</code>. Claims are drawn from its manifest, Dart source and Firebase security rules.</footer>
+</main>
+</body>
+</html>
