@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — AnimAi · Privacy Policy — AnimAi</title>
+<style>
+  :root { color-scheme: light; --ink:#201f1a; --accent:#3f5fa8; --paper:#fafaf6; --line:#dfe2ea; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f0f2f7; color:var(--ink); font-family:Arial, Tahoma, sans-serif; line-height:1.75; }
+  main { width:min(860px, calc(100% - 32px)); margin:32px auto; background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,5vw,52px); box-shadow:0 12px 34px rgba(30,40,70,.08); }
+  h1,h2 { color:var(--accent); line-height:1.25; }
+  h1 { margin-top:0; font-size:clamp(1.8rem,5vw,2.5rem); }
+  h2 { margin-top:2rem; font-size:1.3rem; }
+  .meta { padding:14px 18px; background:#eaeef8; border-radius:14px; }
+  section.en { direction:ltr; text-align:left; border-top:1px solid var(--line); margin-top:44px; padding-top:8px; }
+  ul { padding-inline-start:1.3rem; }
+  li { margin-bottom:.45rem; }
+  code { background:#e8ebf2; padding:2px 6px; border-radius:6px; font-size:.92em; }
+  a { color:#2f4d94; font-weight:700; }
+  footer { margin-top:40px; font-size:.92rem; color:#5d6470; }
+</style>
+</head>
+<body>
+<main>
+  <h1>سياسة الخصوصية — AnimAi</h1>
+  <p class="meta">آخر تحديث: 2026-10-14 · التطبيق: <strong>AnimAi (رفيق)</strong> · المعرّف: <code>com.animai.rafiq</code></p>
+
+  <h2>١. ما هذا التطبيق</h2>
+  <p>AnimAi رفيقٌ افتراضي على هاتفك: يتعلّم عاداتك ويتحدّث معك ويعيش فوق الشاشة. صُمِّم بحيث تعمل الميّزات الأساسية على الجهاز نفسه، بلا حساب مستخدمين وبلا خادم يحتفظ بمحتوى محادثاتك.</p>
+
+  <h2>٢. ما يبقى على هاتفك</h2>
+  <p>رفيقك وعاداته المتعلَّمة وسجل محادثاتك وما يتذكّره عنك تُحفظ على هذا الجهاز فقط ولا تُرفع أبدًا. المحادثات مع «العقل الذكي» تعمل بالكامل على هاتفك. النسخ الاحتياطي السحابي في أندرويد مُعطَّل عمدًا (<code>allowBackup=false</code>) لأن بيانات الرفيق محلية بطبيعتها.</p>
+
+  <h2>٣. الصوت</h2>
+  <p>عند الضغط على الميكروفون، تحوّل خدمة التعرّف على الكلام في هاتفك صوتك إلى نص. حسب هاتفك قد تعالج هذه الخدمة الصوت على الجهاز أو ترسله إلى مزوّدها. التطبيق لا يرفع تسجيلاتك إلى خادم لنا ولا يحتفظ بها.</p>
+
+  <h2>٤. تنزيل العقل الذكي (النماذج)</h2>
+  <p>لا يُنزَّل أي نموذج إلا عند ضغطك على «تثبيت»، من Hugging Face، ويُتحقّق من الملف بمطابقة بصمته (checksum) المنشورة قبل الاستخدام. لكل نموذج ترخيصه الخاص ويظهر لك قبل التنزيل. الملفات المحمّلة تبقى على جهازك. هذا التنزيل هو السبب الأساسي في أن إصدار الإنتاج يطلب إذن الإنترنت.</p>
+
+  <h2>٥. الإعلانات والمشتريات</h2>
+  <p>مقاطع الفيديو الاختيارية ذات المكافأة يقدّمها <strong>Google AdMob</strong>، الذي قد يستخدم معرّف الإعلانات في جهازك. نطلب موافقتك حيث يفرض القانون ذلك، والإعلانات آمنة للعائلة وغير مخصّصة، واشتراك <strong>AnimAi+</strong> يزيلها. المشتريات تتم عبر Google Play وتخضع لسياسة Google، ولا نرى بيانات الدفع لديك.</p>
+
+  <h2>٦. الأذونات ولماذا</h2>
+  <ul>
+    <li><strong>الإنترنت</strong> (<code>INTERNET</code>): لتنزيل النماذج التي تختارها، ولعرض إعلانات AdMob الاختيارية، ولأداء Google Play. لا يُستخدم لرفع يومياتك أو محادثاتك.</li>
+    <li><strong>الميكروفون</strong> (<code>RECORD_AUDIO</code>): لتحويل كلامك إلى نص عندما تضغط الزر.</li>
+    <li><strong>الأنشطة الحركية</strong> (<code>ACTIVITY_RECOGNITION</code>): لعدّ خطواتك كمصدر للسلوك اليومي للرفيق.</li>
+    <li><strong>الظهور فوق التطبيقات</strong> (<code>SYSTEM_ALERT_WINDOW</code> + <code>FOREGROUND_SERVICE</code>): ليظهر الرفيق فوق الشاشة، بتفعيل صريح منك.</li>
+    <li><strong>الإشعارات</strong> (<code>POST_NOTIFICATIONS</code>): تنبيهات الرفيق، مجدولة محليًا على الجهاز.</li>
+    <li><strong>التنبيهات الدقيقة</strong> (<code>SCHEDULE_EXACT_ALARM</code> + <code>USE_FULL_SCREEN_INTENT</code>): لإطلاق التذكيرات في وقتها.</li>
+    <li><strong>التشغيل عند الإقلاع</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): لإعادة جدولة التنبيهات بعد إعادة تشغيل الهاتف.</li>
+    <li><strong>إحصاءات الاستخدام</strong> (<code>PACKAGE_USAGE_STATS</code>): اختياري تمامًا، تمنحه أنت من إعدادات النظام إن أردت أن يعرف الرفيق وقت شاشتك في هذا اليوم. لا نجمع منه شيئًا إلينا.</li>
+    <li><strong>الاهتزاز</strong> (<code>VIBRATE</code>): لملاحظات اللمس.</li>
+    <li><strong>الفوترة</strong> (<code>com.android.vending.BILLING</code>): للشراء داخل التطبيق عبر Google Play.</li>
+  </ul>
+
+  <h2>٧. خدمات خارجية — ما نرسله فعليًا</h2>
+  <ul>
+    <li><strong>Hugging Face:</strong> تنزيل ملف النموذج الذي اخترته. الطلب يرسل عنوان الجهاز إلى الخادم ليجلب الملف؛ لا يرسل محادثاتك.</li>
+    <li><strong>Google AdMob:</strong> قد يصل معرّف الإعلانات وجهازك إلى Google عند عرض إعلان. يمكنك إيقاف تخصيص الإعلانات من إعدادات النظام، والاشتراك يوقف الإعلانات أصلًا.</li>
+    <li><strong>Google Play:</strong> لمعالجة المدفوعات والاسترداد.</li>
+    <li><strong>خدمة التعرّف على الكلام في جهازك:</strong> وفق سياسة مزوّد هاتفك (مثل Google).</li>
+  </ul>
+  <p>لا أدوات تحليل ولا تتبّع ولا قواعد بيانات بعيدة ولا خوادم رسائل عندنا.</p>
+
+  <h2>٨. حذف بياناتك</h2>
+  <p>«الإعدادات › حذف جميع البيانات» يزيل رفيقك وسجل المحادثات وكل ما يتذكّره. تُحذف العقول المثبّتة من صفحة «عقل الرفيق». إلغاء تثبيت التطبيق يحذف ما تبقّى على الجهاز. لا نسخة لدى تُحذف لأننا لا نحتفظ بنسخة أصلًا.</p>
+
+  <h2>٩. الأطفال</h2>
+  <p>التطبيق موجّه للاستخدام العام ولا يجمع بيانات من الأطفال بشكل مقصود؛ يمكن للأهل الإشراف على الاستخدام. إعلانات AdMob مضبوطة لتكون آمنة للعائلة.</p>
+
+  <h2>١٠. الشروط</h2>
+  <p>AnimAi رفيق للمتعة والعافية. لا يقدّم نصائح طبية أو قانونية أو مالية أو في الحالات الطارئة.</p>
+
+  <h2>١١. التواصل</h2>
+  <p>للأسئلة أو طلب حذف: راسل المطوّر على <code>www.toufik.bendjeddah@gmail.com</code> أو افتح Issue في مستودع التطبيق.</p>
+
+  <section class="en" lang="en">
+    <h2>Privacy Policy — AnimAi (English)</h2>
+    <p><strong>Last updated:</strong> 2026-10-14 · <strong>App:</strong> AnimAi · <strong>Package:</strong> <code>com.animai.rafiq</code></p>
+
+    <h2>What the app is</h2>
+    <p>AnimAi is a virtual companion that lives on your phone: it learns your habits, talks with you and can appear over your screen. It is built so the core experience runs on the device — no user accounts, no server holding your conversations.</p>
+
+    <h2>What stays on your phone</h2>
+    <p>Your pet, its learned habits, your chat history and what the pet remembers about you are stored only on this device and are never uploaded. Conversations with the smart brain run entirely on your phone. Android cloud backup is deliberately disabled (<code>allowBackup=false</code>) because pet data is device-local by design.</p>
+
+    <h2>Voice</h2>
+    <p>When you tap the microphone, your phone's own speech recognition service turns your voice into text. Depending on your phone, that service may process audio on the device or send it to its provider. We do not upload recordings and keep no audio store.</p>
+
+    <h2>Smart brain downloads</h2>
+    <p>A model is downloaded only when you tap <em>Install</em>, from Hugging Face, and is checked against its published fingerprint before use. Each model has its own license, shown before download. Downloaded files stay on your device. This download is the main reason the production build requests internet access.</p>
+
+    <h2>Ads and purchases</h2>
+    <p>Optional rewarded videos are provided by <strong>Google AdMob</strong>, which may use your device's advertising ID. You are asked for consent where the law requires it, ads are family-safe and non-personalised, and <strong>AnimAi+</strong> removes them. Purchases are handled by Google Play under Google's policy; we never see your payment details.</p>
+
+    <h2>Permissions and why</h2>
+    <ul>
+      <li><code>INTERNET</code> — fetch the model files you choose, serve optional AdMob ads, and Google Play billing. Not used to upload your chats.</li>
+      <li><code>RECORD_AUDIO</code> — speech-to-text when you press the button.</li>
+      <li><code>ACTIVITY_RECOGNITION</code> — step count, used as daily behaviour input for the pet.</li>
+      <li><code>SYSTEM_ALERT_WINDOW</code> + <code>FOREGROUND_SERVICE</code> — draw the companion over your screen, only after you enable it.</li>
+      <li><code>POST_NOTIFICATIONS</code> — companion reminders, scheduled on the device.</li>
+      <li><code>SCHEDULE_EXACT_ALARM</code> + <code>USE_FULL_SCREEN_INTENT</code> — deliver reminders at their exact time.</li>
+      <li><code>RECEIVE_BOOT_COMPLETED</code> — re-schedule notifications after the phone restarts.</li>
+      <li><code>PACKAGE_USAGE_STATS</code> — fully optional, granted by you in system Settings, if you want the pet to know today's screen time. Nothing is sent to us from it.</li>
+      <li><code>VIBRATE</code> — haptic feedback.</li>
+      <li><code>com.android.vending.BILLING</code> — in-app purchases through Google Play.</li>
+    </ul>
+
+    <h2>Third-party services — what actually leaves the phone</h2>
+    <ul>
+      <li><strong>Hugging Face:</strong> downloading a model file you picked. The request carries your device's address so the server can return the file; your conversations are not sent.</li>
+      <li><strong>Google AdMob:</strong> your advertising ID and device may reach Google when an ad is shown. You can limit ad tracking in system Settings, and the subscription removes ads entirely.</li>
+      <li><strong>Google Play:</strong> payments and refunds.</li>
+      <li><strong>Your phone's speech service:</strong> governed by your device provider's (e.g. Google) policy.</li>
+    </ul>
+    <p>We run no analytics, no tracking, no remote database and no messaging servers.</p>
+
+    <h2>Deleting your data</h2>
+    <p>Settings › Delete all data removes your pet, the chat history and everything the pet remembers. Installed brains are removed from the Pet brain page. Uninstalling the app deletes what remains on the device. Nothing is deleted from our servers because we hold no copy.</p>
+
+    <h2>Children</h2>
+    <p>The app is not built to collect data from children and is not directed at them; parents can supervise use. AdMob is configured for family-safe ads.</p>
+
+    <h2>Terms</h2>
+    <p>AnimAi is a companion for fun and wellbeing. It does not give medical, legal, financial or emergency advice.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or deletion requests: <code>www.toufik.bendjeddah@gmail.com</code> or open an issue in the app's repository.</p>
+  </section>
+
+  <footer>This page describes the AnimAi Android app (<code>com.animai.rafiq</code>). If the app changes what it collects, this page is updated and the date above changes.</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — Track Scribe · Privacy Policy — Track Scribe</title>
+<style>
+  :root { color-scheme: light; --ink:#1d2226; --accent:#2f6f7a; --paper:#f8fbfc; --line:#dbe6e9; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#eef4f5; color:var(--ink); font-family:Arial, Tahoma, sans-serif; line-height:1.75; }
+  main { width:min(860px, calc(100% - 32px)); margin:32px auto; background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,5vw,52px); box-shadow:0 12px 34px rgba(20,45,50,.08); }
+  h1,h2 { color:var(--accent); line-height:1.25; }
+  h1 { margin-top:0; font-size:clamp(1.8rem,5vw,2.5rem); }
+  h2 { margin-top:2rem; font-size:1.3rem; }
+  .meta { padding:14px 18px; background:#e5f0f2; border-radius:14px; }
+  section.en { direction:ltr; text-align:left; border-top:1px solid var(--line); margin-top:44px; padding-top:8px; }
+  ul { padding-inline-start:1.3rem; }
+  li { margin-bottom:.45rem; }
+  code { background:#e8eef0; padding:2px 6px; border-radius:6px; font-size:.92em; }
+  a { color:#255f6b; font-weight:700; }
+  footer { margin-top:40px; font-size:.92rem; color:#5d6f74; }
+</style>
+</head>
+<body>
+<main>
+  <h1>سياسة الخصوصية — Track Scribe</h1>
+  <p class="meta">آخر تحديث: 2026-10-14 · التطبيق: <strong>Track Scribe</strong> (مسجّل المسارات) · المعرّف: <code>dev.toufik.track_scribe</code></p>
+
+  <h2>١. ما هذا التطبيق</h2>
+  <p>Track Scribe يسجّل مساراتك بالـ GPS أثناء النشاط (مشي، جري، ركوب دراجة…) ويعرضها على خريطة داخلية. يعمل بلا إنترنت، وبياناته تبقى في هاتفك.</p>
+
+  <h2>٢. بيانات الموقع التي يجمعها</h2>
+  <p>إحداثياتك أثناء التسجيل تُحفَظ في قاعدة بيانات محلية داخل التطبيق على جهازك فقط. لا تُرفع إلى خادم، ولا تُشارَك مع أي جهة، ولا تُرسل عبر البريد أو التطبيقات الأخرى إلا إذا قمت أنت بذلك صراحةً.</p>
+
+  <h2>٣. لا اتصال بالشبكة في إصدار الإنتاج</h2>
+  <p>إصدار الإنتاج لا يطلب إذن النظام <code>INTERNET</code>، فلا يستطيع إرسال بياناتك. بلاطات الخريطة محفوظة داخل التطبيق (ملفات <code>.pmtiles</code> مضمّنة في الحزمة)، فلا حاجة للاتصال بالإنترنت لعرض الخريطة. لا إعلانات، ولا تحليلات، ولا تتبّع، ولا حسابات.</p>
+
+  <h2>٤. الأذونات ولماذا</h2>
+  <ul>
+    <li><strong>الموقع الدقيق</strong> (<code>ACCESS_FINE_LOCATION</code>): لتسجيل المسار نفسه؛ بدون هذا الإذن لا يعمل التسجيل.</li>
+    <li><strong>خدمة خلفية + موقع</strong> (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>): ليكمل التسجيل أثناء قفل الشاشة أو استخدام تطبيقات أخرى.</li>
+    <li><strong>منع السكون وتجاهل تحسين البطارية</strong> (<code>WAKE_LOCK</code>, <code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>): حتى لا يوقف النظام التسجيل في منتصف النشاط.</li>
+    <li><strong>الإشعارات</strong> (<code>POST_NOTIFICATIONS</code>): لعرض شريط حالة التسجيل أثناء العمل في الخلفية.</li>
+  </ul>
+  <p>كل هذه الأذونات تُستعمل لوظيفة التسجيل على جهازك فقط، ولا يُرسل محتواها إلى أي جهة خارجية.</p>
+
+  <h2>٥. حذف بياناتك</h2>
+  <p>يمكنك حذف المسارات من داخل التطبيق، وحذف التطبيق أو «مسح البيانات» من إعدادات النظام › التطبيقات يزيل كل ما سجّلته نهائيًا. لا نملك نسخة عندنا.</p>
+
+  <h2>٦. الأطفال</h2>
+  <p>التطبيق غير موجَّه إلى الأطفال دون 13 عامًا، ولا نجمع أي بيانات منهم.</p>
+
+  <h2>٧. تغييرات هذه السياسة</h2>
+  <p>أي تعديل يُنشر على هذه الصفحة مع تحديث تاريخ «آخر تحديث».</p>
+
+  <h2>٨. التواصل</h2>
+  <p>الأسئلة حول الخصوصية: <a href="mailto:www.toufik.bendjeddah@gmail.com">www.toufik.bendjeddah@gmail.com</a></p>
+
+  <section class="en" lang="en">
+    <h1>Privacy Policy — Track Scribe</h1>
+    <p class="meta">Last updated: 2026-10-14 · App: <strong>Track Scribe</strong> (GPS activity recorder) · Package: <code>dev.toufik.track_scribe</code></p>
+
+    <h2>1. What the app is</h2>
+    <p>Track Scribe records your GPS route during an activity (walking, running, cycling…) and shows it on a built-in map. It works offline and your data stays on the phone.</p>
+
+    <h2>2. Location data it handles</h2>
+    <p>Coordinates captured while recording are stored in a local database inside the app on your device only. They are never uploaded to a server, never shared with third parties, and leave the app only if you explicitly export them yourself.</p>
+
+    <h2>3. No network access in the released build</h2>
+    <p>The production build does not request the Android <code>INTERNET</code> permission, so it cannot transmit your data. Map tiles ship inside the app (bundled <code>.pmtiles</code> files), so no connection is needed to draw the map. No ads, no analytics, no tracking, no accounts.</p>
+
+    <h2>4. Permissions and why</h2>
+    <ul>
+      <li><strong>Precise location</strong> (<code>ACCESS_FINE_LOCATION</code>): this is the recording itself; without it the app cannot record.</li>
+      <li><strong>Foreground service + location</strong> (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_LOCATION</code>): so recording continues while the screen is off or another app is open.</li>
+      <li><strong>Wake lock and battery-optimisation exemption</strong> (<code>WAKE_LOCK</code>, <code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>): so the system does not stop recording mid-activity.</li>
+      <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>): to show the recording status while running in the background.</li>
+    </ul>
+    <p>Each permission is used for on-device recording only; none of its content is sent to any external party.</p>
+
+    <h2>5. Deleting your data</h2>
+    <p>You can delete routes inside the app; uninstalling the app or using “Clear data” in system Settings › Apps permanently removes everything recorded. We hold no copy.</p>
+
+    <h2>6. Children</h2>
+    <p>The app is not directed at children under 13 and we collect no data from them.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>Any change is published on this page with an updated “last updated” date.</p>
+
+    <h2>8. Contact</h2>
+    <p>Privacy questions: <a href="mailto:www.toufik.bendjeddah@gmail.com">www.toufik.bendjeddah@gmail.com</a></p>
+  </section>
+
+  <footer>هذه الصفحة هي المرجع الرسمي لسياسة خصوصية تطبيق Track Scribe على Google Play.<br>This page is the reference privacy policy for Track Scribe on Google Play.</footer>
+</main>
+</body>
+</html>
