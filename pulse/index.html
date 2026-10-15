@@ -40,7 +40,8 @@
   <h2>1. The short version</h2>
   <p>Your journal entries, moods, tags, photos and audio recordings never leave your phone. There is no
   account to create, no email address to give, and no server that receives your writing. The app contains
-  no analytics software, no crash-reporting service, no advertising and no third-party tracking.</p>
+  no analytics software, no crash-reporting service, no advertising and no third-party tracking. The only
+  thing the app ever sends out is a purchase token, used to confirm a Pulse Pro buy (section 3).</p>
 
   <h2>2. What stays on your device</h2>
   <p>Everything you create is written to your device's private storage:</p>
@@ -61,6 +62,9 @@
   <table>
     <tr><th>Data</th><th>When</th><th>Who receives it</th></tr>
     <tr><td>Purchase confirmation</td><td>When you buy Pulse Pro (one-time lifetime unlock)</td><td>Google Play</td></tr>
+    <tr><td>Purchase token and product ID, plus a random app-generated ID</td><td>When you buy or restore
+      Pulse Pro, so the purchase can be checked with Google</td><td>RevenueCat (receipt-verification
+      service)</td></tr>
     <tr><td>Audio of your dictation</td><td>Only if you dictate. Recognition is performed by your
       phone's own speech service, which works on-device or online depending on that service's own
       configuration</td><td>Your phone's speech recognition service (for example Google)</td></tr>
@@ -70,10 +74,16 @@
   the app even removes the advertising-ID permission that some libraries request on its behalf.</p>
 
   <h3>In-app purchases</h3>
-  <p>Purchases are processed entirely by Google Play. Payment card details are never seen by this app and
-  never stored on your device. When Google Play confirms your one-time purchase, Pulse records that
-  confirmation in the phone's protected key storage so Pulse Pro keeps working after a restart. That record
-  never leaves your phone, and Pulse runs no purchase server of its own.</p>
+  <p>Payment is handled by Google Play: card details are never seen by this app and never stored on your
+  device. To confirm that a purchase is real and not refunded, Pulse sends Google Play's purchase token,
+  the product ID, and a random identifier that the app generated on your phone to
+  <strong>RevenueCat</strong> (<code>api.revenuecat.com</code>) over HTTPS. RevenueCat checks that token
+  with Google and answers only whether the purchase is active. This identifier is random, contains nothing
+  about you, and is never joined to your journal data. No other app data is sent, and RevenueCat is used
+  for this verification only — it is not given your writing, your moods, or your identity. The verified
+  result is also stored in the phone's protected key storage so Pulse Pro keeps working after a restart.
+  If you delete the app, the random identifier goes with it; you can ask us to have a stored purchase
+  record removed as well (section 9).</p>
 
   <h3>Dictation</h3>
   <p>Dictation is handed to the speech recogniser already installed on your phone, the same one your
@@ -110,7 +120,7 @@
       scheduled on the phone</td></tr>
     <tr><td>Run at startup</td><td>Re-scheduling your reminders after the phone restarts</td></tr>
     <tr><td>Biometrics</td><td>Unlocking the app with your fingerprint or face</td></tr>
-    <tr><td>Internet</td><td>Google Play purchases only (see section 3). No journal data is ever sent.</td></tr>
+    <tr><td>Internet</td><td>Verifying a Pulse Pro purchase only (see section 3). No journal data is ever sent.</td></tr>
   </table>
   <p>Every permission is optional. If you decline one, the corresponding feature is unavailable and the
   rest of the app continues to work.</p>
@@ -126,13 +136,17 @@
 
   <h2>8. Children</h2>
   <p>Pulse is not directed at children under 13. Because the app requires no account and collects no
-  personal information from anyone, it does not knowingly gather data from children.</p>
+  personal information about who you are, it does not knowingly gather data from children. The purchase
+  verification in section 3 carries a random identifier and a purchase token only — nothing that says who
+  the buyer is.</p>
 
   <h2>9. Your rights</h2>
   <p>Under the GDPR, CCPA and similar laws you have the right to access, correct, export, or delete your
   personal data. Because your journal is stored only on your device and is never transmitted to us, you can
-  exercise every one of these rights directly from within the app without contacting us. There is no
-  account or server-side record for us to look up on your behalf.</p>
+  exercise every one of these rights directly from within the app without contacting us. The one exception
+  is a purchase record: if you bought Pulse Pro, a minimal record (random identifier, purchase token,
+  product) exists at RevenueCat. Mail us the address above and we will have that subscriber record deleted;
+  no journal content is in it.</p>
 
   <h2>10. Changes to this policy</h2>
   <p>If this policy changes, the updated version will be published at this URL with a new effective date
