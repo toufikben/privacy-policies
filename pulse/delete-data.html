@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your Pulse data — Toufik Bendjeddah</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; background: #0b0e14; color: #e8eaf0; line-height: 1.65; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 22px 72px; }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 34px 0 10px; color: #9fd8b0; }
+  p.meta { color: #9aa3b2; font-size: 14px; margin: 0 0 26px; }
+  code { background: #1b2030; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+  a { color: #7cc4ff; }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  .box { background: #141a26; border: 1px solid #232c3d; border-radius: 10px; padding: 16px 18px; margin: 18px 0; }
+  footer { margin-top: 44px; font-size: 13px; color: #7f8797; border-top: 1px solid #232c3d; padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Deleting your Pulse data</h1>
+  <p class="meta">Pulse: Private Journal (<code>com.nabd.journal</code>) &middot; by Toufik Bendjeddah &middot; Updated 15 October 2026</p>
+
+  <p>Pulse keeps everything you write on your own phone. That means most of your data is deleted by you,
+  in the app, in one action — no request to us needed. Two things are covered below: the journal data on
+  your device, and the small purchase record created when you buy Pulse Pro.</p>
+
+  <h2>1. Delete your journal data yourself (instant)</h2>
+  <div class="box">
+    <p>Open <strong>Pulse &rarr; Settings &rarr; Data &rarr; Delete All Data</strong> and confirm the dialog.
+    This erases from your device, in one action: every journal entry; your mood history, tags, seed garden and
+    other saved content; the photos and audio recordings stored with them; your themes, language and other
+    settings; the encryption key and passcode, plus the app lock; and any reminder schedules. A fresh
+    encryption key is created for the restarted app. It cannot be undone. Nothing needs to be sent to us,
+    because none of this data was ever transmitted to us.</p>
+  </div>
+  <p>You can also simply uninstall the app; Android removes its private storage with it. Clearing the app's
+  storage from <strong>Android Settings &rarr; Apps &rarr; Pulse &rarr; Storage &rarr; Clear data</strong>
+  has the same effect while keeping the app installed.</p>
+  <p>The in-app control does not remove the small purchase record described in section 2 &mdash; that record
+  is not on your phone, so only we can delete it.</p>
+
+  <h2>2. Delete your Pulse Pro purchase record (ask us)</h2>
+  <p>When you buy or restore Pulse Pro, the app sends Google Play's purchase token, the product ID and a
+  random identifier generated on your phone to RevenueCat, which checks the purchase with Google. That record
+  contains no journal content, no name, no email address and no phone number.</p>
+  <div class="box">
+    <p>To have that record removed, email <a href="mailto:toufik.bendjeddah@gmail.com">toufik.bendjeddah@gmail.com</a>
+    with the subject line <strong>Pulse data deletion</strong>. Tell us roughly when you bought Pulse Pro and
+    which device you used. We delete the corresponding subscriber record in RevenueCat, usually within a few
+    days and always within 30 days, and confirm to you when it is done.</p>
+    <p>Deleting the purchase record means Pulse can no longer verify your Pulse Pro entitlement on a new
+    install. You can buy again, or restore the purchase from the app if the record still exists in Google Play.</p>
+    <p>The copy of the random identifier kept on your phone is private app storage: uninstalling Pulse, or
+    clearing its data in Android Settings, removes it.</p>
+  </div>
+
+  <h2>3. What we cannot delete for you</h2>
+  <ul>
+    <li><strong>Backups you made yourself.</strong> If you exported an encrypted backup file, it lives wherever
+    you saved it; delete that file yourself.</li>
+    <li><strong>Google Play's own purchase records.</strong> Order history held by Google is covered by Google's
+    privacy policy and must be requested through Google Play support.</li>
+    <li><strong>Dictation audio handled by your phone.</strong> Pulse does not store or forward it; the speech
+    service on your device decides its own retention.</li>
+  </ul>
+
+  <h2>4. Your other rights</h2>
+  <p>Under GDPR, CCPA and similar laws you can also ask us about access, correction or export of any personal
+  data we hold. The same email address applies. Because Pulse has no accounts and no journal server, there is
+  no personal dataset for us to export on your behalf — the app's own export tool produces the encrypted backup
+  file described above.</p>
+
+  <p>Full details are in the <a href="./">Pulse Privacy Policy</a>.</p>
+
+  <footer>Pulse: Private Journal &middot; <code>com.nabd.journal</code> &middot; Contact: toufik.bendjeddah@gmail.com</footer>
+</main>
+</body>
+</html>
