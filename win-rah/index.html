@@ -63,7 +63,7 @@
     <p><strong>تقارير المستخدمين:</strong> ما ترسله أنت عمدًا من حالة القطار (مستوى الاكتظاظ، التأخير، ملاحظة نصية اختيارية). هذه التقارير تُعرض لمستخدمين آخرين، فلا تكتب فيها معلومات شخصية عنك أو عن الغير.</p>
 
     <h2>3. الخادم ونقل البيانات</h2>
-    <p>تُرسل البيانات إلى خادم تشغيل يديره المطور (<code>train-api-uep7.onrender.com</code>، مستضاف لدى Render). النقل كله عبر <strong>HTTPS</strong>؛ نسخة المتجر معطَّل فيها الاتصال غير المشفَّر تمامًا. البيانات مخزَّنة في قاعدة بيانات الخادم بالقدر اللازم لتقديم الخدمة وحمايتها من إساءة الاستخدام، دون ضمان تشفير أثناء السكون. لا يحتوي أي سجل على اسمك أو بريدك أو رقم هاتفك، لأن التطبيق لا يجمعها.</p>
+    <p>تُرسل البيانات إلى خادم تشغيل يديره المطور (<code>train-api-eu.onrender.com</code>، مستضاف لدى Render). النقل كله عبر <strong>HTTPS</strong>؛ نسخة المتجر معطَّل فيها الاتصال غير المشفَّر تمامًا. البيانات مخزَّنة في قاعدة بيانات الخادم بالقدر اللازم لتقديم الخدمة وحمايتها من إساءة الاستخدام، دون ضمان تشفير أثناء السكون. لا يحتوي أي سجل على اسمك أو بريدك أو رقم هاتفك، لأن التطبيق لا يجمعها.</p>
 
     <h2>4. أطراف ثالثة تتصل بها الخريطة والدفع</h2>
     <p><strong>الخريطة:</strong> عند فتح الخريطة، يحمّل التطبيق نمط الخريطة وبلاطاتها من خدمة <strong>OpenFreeMap</strong> (<code>tiles.openfreemap.org</code>) عبر مكتبة MapLibre. يعني هذا أن خوادم OpenFreeMap تستلم عنوان IP الخاص بجهازك وطلب البلاطة، كأي طلب صور عادي من الإنترنت، بغرض عرض الخريطة فقط. بيانات الخريطة مصدرها OpenStreetMap وتبقى تحت رخصتها: <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>.</p>
@@ -132,7 +132,7 @@
     <p><strong>User reports:</strong> whatever you deliberately submit about a train (crowding level, delay, optional free text). These reports are shown to other users, so do not include personal information about yourself or other people.</p>
 
     <h2>3. Backend and transport</h2>
-    <p>Data is sent to a backend operated by the developer (<code>train-api-uep7.onrender.com</code>, hosted on Render). All transport is <strong>HTTPS</strong>; cleartext traffic is disabled outright in the store build. Data is kept in the server database as long as needed to run and protect the service, with no at-rest encryption guarantee. No server record holds your name, email or phone number, because the app never collects them.</p>
+    <p>Data is sent to a backend operated by the developer (<code>train-api-eu.onrender.com</code>, hosted on Render). All transport is <strong>HTTPS</strong>; cleartext traffic is disabled outright in the store build. Data is kept in the server database as long as needed to run and protect the service, with no at-rest encryption guarantee. No server record holds your name, email or phone number, because the app never collects them.</p>
 
     <h2>4. Third parties contacted by the map and the store</h2>
     <p><strong>Map:</strong> when you open the map, the app loads the map style and tiles from <strong>OpenFreeMap</strong> (<code>tiles.openfreemap.org</code>) using the MapLibre library. That means OpenFreeMap's servers receive your device's IP address and the tile request, like any ordinary image request on the internet, solely to render the map. The map data comes from OpenStreetMap and remains under its licence: <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a>.</p>
